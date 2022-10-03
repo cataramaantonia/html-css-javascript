@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <title>ORNITOR SRL</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="date.js"></script>
+    <script type="text/javascript" src="indexx.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+
+</head>
+
+<body>
+<!-- Header -->
+<header>
+    <div class="logo-container">
+        <img src="https://img.favpng.com/15/14/13/perry-the-platypus-dr-heinz-doofenshmirtz-candace-flynn-phineas-flynn-ferb-2-png-favpng-B9dvtDu5NRxsBAuNEdXAA5UB0.jpg" alt="logo" />
+        <h1 class="logo">Ornitor SRL</h1>
+    </div>
+    <nav>
+        <ul class="menu">
+            <li><a class="nav-link" href="index.html">Home</a></li>
+            <li><a class="nav-link" href="aboutus.html">About us</a></li>
+            <li><a class="nav-link" href="platypuses.html">Our platypuses</a></li>
+            <li><a class="nav-link" href="#">More</a>
+                <ul class="submenu">
+                    <li><a class="nav-link" href="shop.html">Shop</a></li>
+                    <li><a class="nav-link" href="funfacts.html">Fun facts</a></li>
+                </ul></li>
+        </ul>
+    </nav>
+</header>
+<!-- Header -->
+
+<!-- Main -->
+<main>
+    <form id="myform">
+        <label>Name <input type="text" name=“client” id="client" placeholder="Ion Ion"></label>
+        <br>
+        <br>
+        <label>E-mail  <input type="email" name=“email” id="email" placeholder="ionion@xy.com"></label>
+        <br>
+        <br>
+        <label>Phone number  <input type="tel" name="tel" id="tel" placeholder="0712345678"></label>
+        <br>
+        <br>
+            <label><input type="radio" name="frequence" value="daily" id="daily"> daily e-mails </label><br>
+            <label><input type="radio" name="frequence" value="weekly" checked id="weekly"> weekly e-mails</label>
+        <br>
+        <button type="submit" id="submitbuton"> Submit </button>
+    </form>
+    <div id="citat"></div>
+    <form name="quiz" id="quiz">
+        <div class="questiondiv">
+            <br><p class="qtitle">1. Where do platypuses live?</p><br>
+            <p class="qanswers"><input type="radio" name="question1" value="Australia"> Australia</p>
+            <p class="qanswers"><input type="radio" name="question1" value="USA"> USA</p>
+            <p class="qanswers"><input type="radio" name="question1" value="Romania"> Romania</p>
+            <p class="qanswers"><input type="radio" name="question1" value="Italy"> Italy</p><br>
+        </div>
+
+        <div class="questiondiv">
+            <p class="qtitle">2. Are they venomous?</p><br>
+            <p class="qanswers"><input type="radio" name="question2" value="Yes"> Yes</p>
+            <p class="qanswers"><input type="radio" name="question2" value="No"> No</p><br>
+        </div>
+
+        <div class="questiondiv">
+            <p class="qtitle">3. Do they lay eggs?</p><br>
+            <p class="qanswers"><input type="radio" name="question3" value="Yes"> Yes</p>
+            <p class="qanswers"><input type="radio" name="question3" value="No"> No</p><br>
+        </div>
+
+        <div class="questiondiv">
+            <p class="qtitle">4. What is one thing platypuses don't have?</p><br>
+            <p class="qanswers"><input type="radio" name="question4" value="Lungs"> Lungs</p>
+            <p class="qanswers"><input type="radio" name="question4" value="Hair"> Hair</p>
+            <p class="qanswers"><input type="radio" name="question4" value="A stomach"> A stomach</p>
+            <p class="qanswers"><input type="radio" name="question4" value="Feet"> Feet</p><br>
+        </div>
+
+        <div id="divbutton"><input type="button" name="" value="Results" onclick="check()" class="qbutton" id="button"></div>
+    </form>
+    <p id="result"></p><br><br><br>
+    <div class="qqq111"><p><a href='index.html' id="result2"> </a></p><br>
+        <p><a href='index.html' id="result3"> </a></p></div>
+</main>
+<!-- /Main -->
+
+</body>
+
+
+</html>

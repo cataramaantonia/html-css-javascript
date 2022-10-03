@@ -1,0 +1,156 @@
+@media screen and (max-width: 800px) {
+    .main {
+        width: 100%;
+    }
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(https://cdn.wallpapersafari.com/36/36/Z0FxHB.png);
+    background-size: cover;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    display: flex;
+    width: 90%;
+    height: 14vh;
+    margin: auto;
+    align-items: center;
+}
+
+img{
+    max-width: 129px;
+    max-height: 129px;
+}
+
+.logo-container,
+.menu,
+.submenu{
+    display: flex;
+}
+
+.logo-container{
+    flex: 1;
+}
+
+.logo{
+    font-weight: 400;
+    margin: 5px;
+}
+
+nav{
+    flex: 2;
+}
+
+.menu,
+.submenu{
+    justify-content: space-around;
+    list-style: none;
+}
+
+.nav-link{
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+.menu > li > ul.submenu{
+    display: none;
+}
+
+.menu > li:hover > ul.submenu{
+    display: block;
+    position: absolute;
+}
+
+.nav-link:hover{
+    color: white;
+}
+
+
+button {
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+button:hover span {
+    padding-right: 25px;
+}
+
+button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+@keyframes miscare1{
+    100%{
+        top:0px;
+        left:0px;
+        transform:scale(0,0);
+        background:red;
+    }
+}
+
+
+@keyframes miscare2{
+    100%{
+        top:0px;
+        left:0px;
+        transform:rotate(360deg);
+        background:yellow;
+    }
+}
+
+.animat{
+    border:1px solid black;
+    background:blue;
+    width:50px;
+    height:50px;
+    animation-timing-function:linear;
+    animation-iteration-count:1;
+    animation-fill-mode:forwards;
+    animation-duration:20s;
+}
+body{height:1000px;}
+
+#citat {
+    padding-top: 240px;
+}
+
+#myform{
+    font-size:30px;
+    padding-top: 20px;
+}

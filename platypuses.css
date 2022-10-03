@@ -1,0 +1,115 @@
+@media screen and (max-width: 800px) {
+    .main {
+        width: 100%;
+    }
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    background-color: lightseagreen;
+    display: flex;
+    width: 100%;
+    height: 14vh;
+    margin: auto;
+    align-items: center;
+}
+
+footer > a{
+    color: black;
+    margin-left: 30px;
+}
+
+img{
+    max-width: 129px;
+    max-height: 129px;
+}
+
+.logo-container,
+.menu,
+.submenu{
+    display: flex;
+}
+
+.logo-container{
+    flex: 1;
+}
+
+.logo{
+    font-weight: 400;
+    margin: 5px;
+}
+
+nav{
+    flex: 2;
+}
+
+.menu,
+.submenu{
+    justify-content: space-around;
+    list-style: none;
+}
+
+.nav-link{
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+.menu > li > ul.submenu{
+    display: none;
+}
+
+.menu > li:hover > ul.submenu{
+    display: block;
+    position: absolute;
+}
+
+.nav-link:hover{
+    color: white;
+}
+
+.column{
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+    background-color: white;
+    margin-left: 250px;
+    margin-top: 100px;
+}
+
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+
+}
+
+figure > img{
+    max-width: 500px;
+    max-height: 500px;
+    object-fit: scale-down;
+}
+
+figure:hover{
+    position: relative;
+    z-index: 10;
+    transition: tramsform 3s;
+    transform: scale(1.5);
+}
+
+
+
+
+
+
+
